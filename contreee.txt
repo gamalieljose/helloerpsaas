@@ -1,0 +1,16 @@
+composer install 
+composer install --ignore-platform-reqs
+
+php artisan route:list --ignore-platform-reqs
+
+ Route::resource('tables', 'Restaurant\TableController');
+        Route::resource('modifiers', 'Restaurant\ModifierSetsController');
+
+        //Map modifier to products
+        Route::get('/product-modifiers/{id}/edit', 'Restaurant\ProductModifierSetController@edit');
+        Route::post('/product-modifiers/{id}/update', 'Restaurant\ProductModifierSetController@update');
+        Route::get('/product-modifiers/product-row/{product_id}', 'Restaurant\ProductModifierSetController@product_row');
+
+        Route::get('/add-selected-modifiers', 'Restaurant\ProductModifierSetController@add_selected_modifiers');
+
+        Route::get('/kitchen', 'Restaurant\KitchenController@index');

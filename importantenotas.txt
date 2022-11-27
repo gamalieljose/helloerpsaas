@@ -1,0 +1,62 @@
+composer create-project laravel/laravel mi-proyecto-laravel 5.5.*
+
+composer create-project laravel/laravel mi-proyecto-laravel 8.61.0.*
+
+
+ 8.61.0
+
+
+composer create-project --prefer-dist laravel/laravel:^7.0 blog
+
+
+
+composer create-project --prefer-dist laravel/laravel:^8.61.0 helloerp
+
+
+
+composer create-project laravel/laravel helloerp
+
+
+
+
+
+
+------------------------
+
+composer require laravel/fortify
+
+
+
+C:\laragon\www\helloerp\app\Providers
+
+
+
+
+
+
+Route::group(
+    [
+        'middleware' => [
+            'auth',
+            'XSS',
+            'revalidate',
+        ],
+    ], function (){
+
+    Route::get('customer/{id}/show', 'CustomerController@show')->name('customer.show');
+    Route::resource('customer', 'CustomerController');
+
+}
+);
+
+
+
+
+
+ //Print Labels
+    Route::get('/labels/show', 'LabelsController@show');
+    Route::get('/labels/add-product-row', 'LabelsController@addProductRow');
+    Route::get('/labels/preview', 'LabelsController@preview');
+
+
+

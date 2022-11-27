@@ -1,0 +1,40 @@
+<!-- Main content -->
+<section class="content">
+
+<a href="#" data-size="lg" data-url="{{ route('customer.create') }}" data-ajax-popup="true" data-bs-toggle="tooltip" title="{{__('Create')}}" data-title="{{__('Create Customer')}}" class="btn btn-sm btn-primary">
+            <i class="ti ti-plus"></i>
+        </a>
+
+    @component('components.widget', ['class' => 'box-primary', 'title' => __( 'lang_v1.all_your_customer_groups' )])
+        @can('customer.create')
+            @slot('tool')
+                <div class="box-tools">
+                    <button type="button" class="btn btn-block btn-primary btn-modal" 
+                        data-href="{{action('CustomerController@create')}}" 
+                        data-container=".customer_groups_modal">
+                        <i class="fa fa-plus"></i> @lang( 'messages.add' )</button>
+                </div>
+            @endslot
+        @endcan
+        @can('customer.view')
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" id="customer_groups_table">
+                    <thead>
+                        <tr>
+                            
+                            <th>@lang( 'lang_v1.customer_group_name' )</th>
+                            <th>@lang( 'lang_v1.calculation_percentage' )</th>
+                            <th>@lang( 'lang_v1.selling_price_group' )</th>
+                            <th>@lang( 'messages.action' )</th>
+                        </tr>
+                    </thead>
+                </table>
+                </div>
+        @endcan
+    @endcomponent
+
+    <div class="modal fade customer_groups_modal" tabindex="-1" role="dialog" 
+    	aria-labelledby="gridSystemModalLabel">
+    </div>
+
+</section>

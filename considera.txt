@@ -1,0 +1,97 @@
+
+
+
+
+errorlog
+/var/log/apache2/
+
+
+composer update --no-scripts  
+
+composer install --ignore-platform-reqs
+https://diarioprogramador.com/crear-crud-en-laravel-con-generador-de-cruds/
+
+RouteServiceProvider  es el home de la app
+
+
+MENU PRINCIPAL
+C:\laragon\www\erpsaas\app\Http\Middleware\AdminSidebarMenu.php   
+
+
+REGISTRO DE CONTROLADORES
+C:\laragon\www\erpsaas\routes\web.php  para registrar los controladores
+
+
+
+JAVA
+C:\laragon\www\erpsaas\public\js          archivo java app.js
+
+
+CONTROLADORES
+C:\laragon\www\erpsaas\routes   archivo web.php para las rutas de controladores.
+
+
+MODELO
+C:\laragon\www\erpsaas\app   estan los modelos
+
+
+
+
+VIEW
+C:\laragon\www\erpsaas\resources\views\   estan las carpetas de los VIEW
+
+
+
+php artisan route:list
+
+
+
+
+php artisan --version
+
+php artisan make:crud bankaccounts
+
+
+composer require laravel/ui  ---No es necesario es el que crea la
+autentificacion.
+
+                              composer require laravel/ui "^1.2"
+---Me resolvio. -W para
+
+
+
+                            npm install bootstrap@latest
+bootstrap-icons @popperjs/core --save-dev
+
+                           npm audit fix
+
+
+php artisan ui bootrstap
+
+si da problema
+
+composer update
+
+
+
+
+bankaccount_view
+
+
+
+
+                                            <th>@lang( 'lang_v1.holdername' )</th>
+                                            <th>@lang( 'lang_v1.bankname' )</th>
+                                            <th>@lang( 'lang_v1.accountnumber' )</th>
+                                            <th>@lang( 'lang_v1.openingbalance' )</th>
+                                            <th>@lang( 'lang_v1.contactnumber' )</th>
+                                            <th>@lang( 'lang_v1.Bankaddress' )</th>
+                                            <th>@lang( 'lang_v1.createdby' )</th>
+                                            <th>@lang( 'messages.action' )</th>
+
+
+
+
+
+
+

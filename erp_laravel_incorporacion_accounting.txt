@@ -1,0 +1,25 @@
+tag agregado para identificar en el proyecto
+
+/**add accounting */
+
+
+//*ending add accounting**/
+
+
+
+controller
+homecontroller
+leavecontroller
+rolecontroller
+usercontroller
+
+vendor faltan
+brian2694
+facades
+nesbot
+php-di
+php-http
+phpoffice
+phpseclib
+scrivo
+uxweb

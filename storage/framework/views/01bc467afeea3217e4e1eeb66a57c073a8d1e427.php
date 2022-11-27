@@ -1,0 +1,1 @@
+<?php /**PATH C:\laragon\www\helloerp\resources\views/bankAccount/index.blade.php ENDPATH**/ ?>
